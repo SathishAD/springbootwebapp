@@ -1,5 +1,5 @@
-FROM openjdk:8-jre-slim
+FROM openjdk:8
 WORKDIR /home
 COPY /target/springboot.jar springboot.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "springboot.jar"]
+CMD ["java", "-jar", "springboot.jar"]
